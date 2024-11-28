@@ -1,10 +1,11 @@
 const express = require("express");
-const router = require("./routes/router");
+const cors = require("cors");
 const app = express();
-const port = 3000;
+const port = 3001;
 
-app.use("/api", router);
+app.use(cors()); // CORS middleware'ini kullanın
 
+// Diğer route'larınız burada
 app.listen(port, () => {
-  console.log(`${port} çalışıyor`);
+  console.log(`Sunucu ${port} portunda çalışıyor`);
 });
