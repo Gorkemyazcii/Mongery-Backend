@@ -8,5 +8,5 @@ app.use(cors());
 app.use("/api", router);
 
 app.listen(port, () => {
-  console.log(Sunucu ${port} portunda çalışıyor);
+  console.log(`Sunucu ${port} portunda çalışıyor`);
 });
